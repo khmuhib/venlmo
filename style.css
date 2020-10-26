@@ -252,13 +252,20 @@ ul,ol {
 .open_winkel_button {
     background-color: #E76344;
     color: white;
-    padding: 10px 80px;
+    padding: 10px 70px;
     border-radius: 38px;
+}
+
+.open_winkel_button:hover{
+    background-color: #E38F7A;
+    color: white;
+    text-decoration: none;
 }
 
 .volg_one_icon {
     margin-top: 40px;
 }
+
 
 .volg_one_icon_text {
     font-family: poppin_bold;
@@ -460,6 +467,110 @@ ul,ol {
 
 }
 
+.volg_one_icon_text1 {
+    margin-top: 60px;
+}
+
+.volg_one_icon_text2 {
+    margin-bottom: 20px;
+}
+
+.volg_one_icon_representatoin {
+    font-size: 25px;
+    line-height: normal;
+    word-spacing: .04em;
+    font-weight: 400;
+    color: white;
+    font-family: poppin_semi_bold;
+ }
+
+.volg_one_icon_for_business {
+    font-family: poppins_extra_light;
+    line-height: normal;
+    word-spacing: .48px;
+    font-weight: 400;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.my_container {
+    width: 1190px;
+    margin: auto;
+}
+
+/* header css */
+
+#header {
+    background-color: #f2f2f2 !important;
+    width: 100% !important;
+    z-index: 1000;
+}
+
+.sticky-top {
+    background-color: #f2f2f2 !important;
+}
+
+.our_menu {
+    justify-content: flex-end;
+}
+
+.header_menu {
+    margin: 0;
+    padding: 0;
+    margin-right: 74px;
+}
+
+.header_menu li a {
+    text-decoration: none;
+    color: #111;
+    padding: 13px !important;
+    display: block !important;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: poppin_semi_bold;
+
+}
+
+.header_menu li a:hover {
+    color: #F2184B;
+    background-color: transparent;
+}
+
+header nav form {
+    width: 115px;
+    justify-content: space-around;
+}
+
+nav form span {
+    background-color: #E76543;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    margin-right: 16px;
+}
+
+nav form span svg {
+    color: #fff;
+    font-size: 13px !important;
+}
+
+nav form a {
+    color: #e76543;
+}
+nav form a:hover{
+    color: #e76543;
+    text-decoration: none;
+}
+nav form .cart{
+    font-size: 18px;
+}
+/* header css end */
 /* Our Best Side Gallary End */
 
 

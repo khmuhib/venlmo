@@ -1,0 +1,161 @@
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 576px) {
+    .my_container {
+        width: 100% !important;
+        margin: auto;
+    }
+         #intro h1 {
+    font-size: 33px !important;
+    margin-top: 158px;
+    margin-left: 57px !important;
+    font-weight: 900;
+    width: 18% !important;
+}
+#intro h2 {
+    color: #E76543;
+    font-weight: 600;
+    margin-left: 57px !important;
+    margin-top: 26px !important; 
+    font-family: poppin_semi_bold;
+    margin-bottom: 20px !important;
+}
+#intro p {
+  
+    margin-left: 57px !important;
+    margin-top: 26px !important; 
+    margin-bottom: 20px !important;
+}
+#intro a {
+  
+    margin-left: 57px !important;
+    margin-top: 26px !important; 
+    margin-bottom: 20px !important;
+}
+
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+    .my_container {
+        width: 100% !important;
+        margin: auto;
+    }
+    #intro h1 {
+    font-size: 33px !important;
+    margin-top: 158px;
+    margin-left: 57px !important;
+    font-weight: 900;
+    width: 18% !important;
+}
+#intro h2 {
+    color: #E76543;
+    font-weight: 600;
+    margin-left: 57px !important;
+    margin-top: 26px !important; 
+    font-family: poppin_semi_bold;
+    margin-bottom: 20px !important;
+}
+#intro p {
+  
+    margin-left: 57px !important;
+    margin-top: 26px !important; 
+    margin-bottom: 20px !important;
+}
+#intro a {
+  
+    margin-left: 57px !important;
+    margin-top: 26px !important; 
+    margin-bottom: 20px !important;
+}
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .my_container {
+        width: 100% !important;
+        margin: auto;
+    }
+        #intro h1 {
+    font-size: 50px !important;
+    margin-top: 158px !important;
+    margin-left: 162px !important;
+    font-weight: 900;
+    width: 39% !important;
+}
+#intro p {
+   
+    margin-left: 162px !important;
+}
+#intro h2 {
+   
+    margin-left: 162px !important;
+}
+#intro a {
+   
+    margin-left: 162px !important;
+}
+
+    }
+    
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .my_container {
+        width: 1190px !important;
+        margin: auto;
+    }
+      #intro h1 {
+    font-size: 85px !important;
+    margin-top: 158px !important;
+    margin-left: 162px !important;
+    font-weight: 900;
+    width: 45% !important;
+}
+#intro p {
+   
+    margin-left: 162px !important;
+}
+#intro h2 {
+   
+    margin-left: 162px !important;
+}
+#intro a {
+   
+    margin-left: 162px !important;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .my_container {
+        width: 1190px !important;
+        margin: auto;
+    }
+        #intro h1 {
+    font-size: 85px !important;
+    margin-top: 158px;
+    margin-left: 162px;
+    font-weight: 900;
+    width: 45% !important;
+}
+#intro p {
+   
+    margin-left: 162px !important;
+}
+#intro h2 {
+   
+    margin-left: 162px !important;
+}
+#intro a {
+   
+    margin-left: 162px !important;
+}
+
+    
+
+}
+@media only screen and (min-width: 1200px) {}

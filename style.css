@@ -1,0 +1,538 @@
+@font-face {
+    src: url("fonts/fontello.woff");
+    font-family: fontello;
+}
+
+@font-face {
+    src: url("fonts/poppin_bold.woff2");
+    font-family: poppin_bold;
+}
+
+@font-face {
+    src: url("fonts/poppin_regular.woff2");
+    font-family: poppin_regular;
+}
+
+@font-face {
+    src: url("fonts/poppin_semi_bold.woff2");
+    font-family: poppin_semi_bold;
+}
+
+@font-face {
+    src: url("fonts/poppins_extra_light.woff2");
+    font-family: poppins_extra_light;
+}
+
+@font-face {
+    src: url("fonts/wix.woff");
+    font-family: wix;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+
+.new-shape {
+    fill: #e76543;
+}
+
+/*.header_content {
+    width: 1745px;
+    height: 1000px;
+    margin: auto;
+}*/
+
+.header_top_content {
+/*    height: 1000px;
+    width: 1745px;*/
+    margin: auto;
+    background-image: url("images/image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+/*
+.container {
+    max-width: 1745px;
+    max-height: 1000px;
+}
+*/
+
+.header_bottom_content {
+    background-image: url("images/hb_img.webp");
+    background-repeat: no-repeat;
+    margin-top: -360px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.header_bottom_content_text {
+}
+
+.video-fluid {
+    width: 107%;
+    height: auto;
+}
+
+.vlgo_section_main {
+    background-color: #58AEBF;
+}
+
+
+/* Our Best Side Start */
+
+.our_best_side {
+    font-size: 50px;
+    line-height: 60px;
+    word-spacing: 0.02em;
+    font-weight: 700;
+    font-family: poppin_bold;
+}
+
+/* Our Best Side End */
+
+
+/* Our Best Side Gallary Start */
+
+.our_best_side_garalley_img_1{
+    position: relative;
+}
+
+.blur {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    display: none;
+}
+
+.our_best_side_garalley_img_1:hover .blur{
+    display: block;
+}
+
+.our_best_side_garalley_img_1_love_icon {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background-color: white;
+}
+
+.our_best_side_garalley_img_1_share_icon{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    background-color: white;
+}
+
+.our_best_side_garalley_main {
+    background-color: #F5F2F2;
+}
+
+.our_best_side_main {
+    background-color: #F5F2F2;
+}
+
+.onze_dilemma_main {
+    background-color: #F5F2F2;
+}
+
+.video_section_main {
+    background-color: #F5F2F2;
+}
+
+.dillemaz_march_store_main {
+    background-color: #F5F2F2;
+}
+
+.dillemaz_march_store_gallary_main {
+    background-color: #F5F2F2;
+}
+
+.dillemaz_march_store_button_main {
+    background-color: #F5F2F2;
+}
+
+.dillemaz_march_store_gallary_img1 {
+    position: relative;
+}
+
+.best_seller {
+    background-color: #E76543;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    text-align: center;
+}
+
+.blur_store {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: #E76543;
+
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+
+    color: white;
+    text-align: center;
+
+    display: none;
+
+    transition-duration: 5s;
+
+    padding-top: 10px;
+
+}
+
+.dillemaz_march_store_gallary_img1:hover .blur_store {
+    display: block;
+}
+
+.slider {
+    position: relative;
+}
+
+.owl-prev {
+    font-size: 30px;
+    position: absolute;
+    top: 155px;
+    bottom: 0px;
+    left: -25px;
+    height: 101px;
+
+}
+
+.owl-prev:hover{
+    background: none!important;
+    color: black!important;
+}
+
+.owl-prev span {
+    font-size: 50px;
+}
+
+.owl-next {
+    font-size: 30px;
+    position: absolute;
+    top: 155px;
+    bottom: 0px;
+    right: -25px;
+    height: 101px;
+
+}
+
+.owl-next:hover{
+    background: none!important;
+    color: black!important;
+}
+
+.owl-next span {
+    font-size: 50px;
+}
+
+.open_winkel_button {
+    background-color: #E76344;
+    color: white;
+    padding: 10px 80px;
+    border-radius: 38px;
+}
+
+.volg_one_icon {
+    margin-top: 40px;
+}
+
+.volg_one_icon_text {
+    font-family: poppin_bold;
+    font-size: 50px;
+    line-height: normal;
+    word-spacing: 1px;
+    font-weight: 700;
+    color: white;
+    margin-top: 155px;
+}
+
+.volg_one_icon_contact {
+    font-family: poppin_semi_bold;
+    font-size: 25px;
+    word-spacing: .04em;
+    font-weight: 400;
+    color: white;
+    margin-top: 60px;
+}
+
+.volg_one_icon_email {
+    font-family: poppins_extra_light;
+    font-size: 16px;
+    line-height: normal;
+    word-spacing: .48px;
+    font-weight: 400;
+    color: white;
+    margin-top: 40px;
+}
+
+.product_name {
+    font-family: poppin_semi_bold;
+    font-size: 24px;
+    line-height: 33.6px;
+    word-spacing: normal;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.product_price {
+    font-family: poppins_extra_light;
+    font-size: 16px;
+    line-height: 22.4px;
+    word-spacing: normal;
+    font-weight: 400;
+}
+
+.footer_main {
+    background-color: #F5F2F2;
+}
+
+.faq {
+    margin-right: 30px;
+}
+
+.copy_right {
+    font-family: poppin_semi_bold;
+    font-size: 12px;
+    line-height: normal;
+    word-spacing: normal;
+    font-weight: 400;
+    margin-left: 90px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.faq ul {
+    text-align: right;
+    margin-right: 40px;
+}
+
+.faq ul li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.faq ul li a{
+    font-family: poppin_semi_bold;
+    font-size: 12px;
+    line-height: normal;
+    word-spacing: normal;
+    font-weight: 400;
+    color: black;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.faq_mobile {
+}
+
+.faq_mobile ul {
+    text-align: center;
+    width: 270px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.faq_mobile ul li {
+    display: inline-block;
+
+}
+
+.faq_mobile ul li a{
+    font-family: poppin_semi_bold;
+    font-size: 12px;
+    line-height: normal;
+    word-spacing: normal;
+    font-weight: 400;
+    color: black;
+    display: block;
+}
+
+.vlgo_section_mobile_main {
+    background-image: url("images/p8.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.volg_one_icon_mobile {
+
+}
+
+.volg_one_icon_mobile_follow_us{
+    font-family: poppin_bold;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 29px;
+    line-height: normal;
+    word-spacing: .58px;
+    font-weight: 700;
+}
+
+.volg_one_icon_mobile_img {
+    text-align: center;
+}
+
+.volg_one_icon_mobile_representatoin {
+    text-align: center;
+    font-size: 19px;
+    line-height: normal;
+    word-spacing: 0.58em;
+    font-weight: 400;
+    font-family: poppin_bold;
+    margin-top: 50px;
+    color: white;
+}
+
+.volg_one_icon_mobile_for_business {
+    text-align: center;
+    line-height: normal;
+    word-spacing: .48px;
+    font-weight: 400;
+    color: white;
+    font-family: poppins_extra_light;
+    margin: 0;
+}
+
+.volg_one_icon_mobile_text1 {
+    margin-top: 105px;
+}
+
+.volg_one_icon_mobile_text2 {
+    margin-top: 20px;
+}
+
+.volg_one_icon_mobile_text3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.this_is_us_section_main {
+    background-color: #F5F2F2;
+}
+
+.this_is_us_section_h1 {
+    color: #E76543;
+    font-size: 27px;
+    line-height: 32.4px;
+    word-spacing: .54px;
+    font-weight: 700;
+    font-family: poppin_bold;
+    margin-top: 30px;
+}
+
+.this_is_us_section_p {
+    color: #E76543;
+    font-size: 14px;
+    line-height: 23.8px;
+    word-spacing: .42px;
+    font-weight: 400;
+    font-family: poppins_extra_light;
+    text-align: justify;
+    padding: 20px;
+
+}
+
+/* Our Best Side Gallary End */
+
+
+
+
+@media screen and (min-width: 600px) {
+    .header_top_content {
+        height: 1000px;
+        width: 1745px;
+        margin: auto;
+        background-image: url("images/image.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .header_content {
+        width: 500px;
+        height: 500px;
+        margin: auto;
+    }
+
+    .copy_right {
+        font-family: poppin_semi_bold;
+        font-size: 12px;
+        line-height: normal;
+        word-spacing: normal;
+        font-weight: 400;
+        text-align: left;
+        width: 194px;
+        margin: auto;
+
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+
+    .our_best_side {
+        font-size: 31px;
+        line-height: 37.2px;
+        word-spacing: 0.02em;
+        font-weight: 700;
+        font-family: poppin_bold;
+    }
+}
+
+/*
+!* Extra small devices (phones, 600px and down) *!
+@media only screen and (max-width: 600px) {
+    .img_bg {
+        background-color: white;
+    }
+}
+
+!* Small devices (portrait tablets and large phones, 600px and up) *!
+@media only screen and (min-width: 600px) {
+
+}
+
+!* Medium devices (landscape tablets, 768px and up) *!
+@media only screen and (min-width: 768px) {
+
+}
+
+!* Large devices (laptops/desktops, 992px and up) *!
+@media only screen and (min-width: 992px) {
+
+}
+
+!* Extra large devices (large laptops and desktops, 1200px and up) *!
+@media only screen and (min-width: 1200px) {
+
+}*/

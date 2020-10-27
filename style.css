@@ -48,8 +48,6 @@ ul,ol {
 }*/
 
 .header_top_content {
-/*    height: 1000px;
-    width: 1745px;*/
     margin: auto;
     background-image: url("images/image.png");
     background-size: cover;
@@ -645,7 +643,7 @@ nav form .cart {
     margin: 0 auto;
     padding: 0;
     background-size: 92% 121%;
-    width: 90%;
+    width: 88%;
     height: 797px;
 }
 #intro h1 {
@@ -713,6 +711,53 @@ nav form .cart {
     top: 55%;
     z-index: -3;
 }
+
+.header_top_content_robert {
+    font-size: 30px;
+    line-height: 1em;
+    word-spacing: normal;
+    font-weight: 700;
+    font-family: poppin_semi_bold;
+}
+
+.header_top_content_sultans {
+    font-size: 22px;
+    line-height: normal;
+    word-spacing: normal;
+    font-weight: 400;
+    color: #E36141;
+    font-family: poppin_semi_bold;
+}
+
+.header_top_content_peragraph {
+    font-family: poppins_extra_light;
+    font-size: 14px;
+    line-height: 22.4px;
+    word-spacing: 0.42px;
+    font-weight: 400;
+    width: 230px;
+    margin-left: 25px;
+}
+
+.watch_us {
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 25px;
+    background: #E86544;
+    display: inline-block;
+    border-radius: 37px;
+    color: #fff;
+    margin-top: 30px;
+    width: 155px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 17px;
+    margin-bottom: 100px;
+    font-family: poppin_regular;
+}
+
+
+
 /* parallax section end */
 
 
@@ -731,6 +776,8 @@ nav form .cart {
         background-position: center;
 
     }
+
+
 
 }
 
@@ -761,6 +808,37 @@ nav form .cart {
         word-spacing: 0.02em;
         font-weight: 700;
         font-family: poppin_bold;
+    }
+
+    .header_top_content_robert {
+        font-size: 30px;
+        line-height: 1em;
+        word-spacing: normal;
+        font-weight: 602;
+        font-family: poppin_semi_bold;
+        width: 122px;
+        margin-left: 25px;
+        margin-top: 60px;
+    }
+
+    .header_top_content_sultans {
+        font-size: 22px;
+        line-height: normal;
+        word-spacing: normal;
+        font-weight: 400;
+        color: #E36141;
+        font-family: poppin_semi_bold;
+        margin-left: 25px;
+        margin-top: 90px;
+    }
+
+    .header_top_content {
+        margin: auto;
+        background-image: url("images/image.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 460px;
     }
 }
 

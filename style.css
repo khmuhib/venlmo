@@ -652,6 +652,7 @@ nav form .cart {
     margin-left: 162px;
     font-weight: 900;
     width: 45%;
+    color: white;
 }
 
 #intro p {
@@ -782,6 +783,7 @@ nav form .cart {
     word-spacing: normal;
     font-weight: 700;
     font-family: poppin_semi_bold;
+    color: white;
 }
 
 
@@ -805,6 +807,7 @@ nav form .cart {
     word-spacing: normal;
     font-weight: 400;
     margin-top: -232px;
+    color: white;
 }
 
 .video_all_caption_div {
@@ -817,6 +820,10 @@ nav form .cart {
 
 .carousel_item_custom {
     margin-bottom: -5px!important;
+}
+
+video {
+    max-width: 107%!important;
 }
 
 /* parallax section end */

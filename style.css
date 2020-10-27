@@ -65,16 +65,53 @@ ul,ol {
 }
 */
 
-.header_bottom_content {
+/*.header_bottom_content {
     background-image: url("images/hb_img.webp");
     background-repeat: no-repeat;
     margin-top: -360px;
     margin-right: 0px;
     margin-left: 0px;
+}*/
+
+/* Shohidul CSS*/
+
+
+
+.header_bottom_content {
+    background-image: url("images/hb_img.webp");
+    background-repeat: no-repeat;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-position: center center;
+    background-size: 115% 110%;
+    padding: 0px 0px 170px;
+    position: relative;
+}
+.header_bottom_contents_texts {
+    position: relative;
+    top: 77%;
+    width: 35%;
+    margin: auto;
+    margin-top: 79px;
+    padding-bottom: 100px;
+}
+.header_bottom_contents_texts h1 {
+    font-size: 60px;
+    font-family: poppin_bold;
+    margin-bottom: 40px;
 }
 
-.header_bottom_content_text {
+.header_bottom_contents_texts p {
+    line-height: 1.8;
+    font-size: 16px;
+    font-family: poppin_regular;
+
 }
+.header_bottom_content_text {}
+
+
+
+/* Shohidul CSS*/
 
 .video-fluid {
     width: 107%;
@@ -83,6 +120,22 @@ ul,ol {
 
 .vlgo_section_main {
     background-color: #58AEBF;
+}
+
+.vlgo_section_left_image {
+    background-image: url("images/p9.webp");
+}
+
+.hudai {
+    margin-top: 97px;
+}
+
+.slider_text {
+    margin-bottom: 600px;
+}
+
+.play_video {
+    margin-bottom: 580px;
 }
 
 
@@ -495,10 +548,9 @@ ul,ol {
 }
 
 .my_container {
-    width: 1190px;
+    width: 90% !important;
     margin: auto;
 }
-
 /* header css */
 
 #header {
@@ -529,7 +581,6 @@ ul,ol {
     font-weight: bold;
     font-size: 12px;
     font-family: poppin_semi_bold;
-
 }
 
 .header_menu li a:hover {
@@ -563,16 +614,109 @@ nav form span svg {
 nav form a {
     color: #e76543;
 }
-nav form a:hover{
+
+nav form a:hover {
     color: #e76543;
     text-decoration: none;
 }
-nav form .cart{
+
+nav form .cart {
     font-size: 18px;
 }
-/* header css end */
-/* Our Best Side Gallary End */
 
+
+/* header css end */
+
+
+/* paralax section start */
+
+
+/* parallax section start */
+
+#header,
+#intro,
+#second {
+    width: 100%;
+}
+
+#intro {
+    background: url(images/image.png) 50% 0 no-repeat fixed;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+    background-size: 92% 121%;
+    width: 90%;
+    height: 797px;
+}
+#intro h1 {
+    font-size: 85px;
+    margin-top: 158px;
+    margin-left: 162px;
+    font-weight: 900;
+    width: 45%;
+}
+
+#intro p {
+    color: #d4d4d4;
+    margin-left: 154px;
+    width: 37%;
+    font-size: 19px;
+    font-family: poppin_regular;
+}
+
+#intro h2 {
+    color: #E76543;
+    font-weight: 600;
+    margin-left: 154px;
+    margin-top: 35px;
+    font-family: poppin_semi_bold;
+}
+
+#intro a {
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 150px;
+    background: #E86544;
+    display: inline-block;
+    border-radius: 37px;
+    color: #fff;
+    margin-top: 30px;
+    width: 155px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 17px;
+    margin-bottom: 100px;
+    font-family: poppin_regular;
+}
+
+#intro a span {
+    display: inline-block;
+    float: right;
+    margin-right: 22px;
+    font-size: 27px;
+}
+
+.bg_color::before {
+    position: absolute;
+    background: #f2f2f2;
+    width: 100%;
+    height: 610px;
+    content: '';
+    z-index: -1;
+}
+.bg_color::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 562px;
+    background: #E86544;
+    top: 55%;
+    z-index: -3;
+}
+/* parallax section end */
+
+
+/* paralax section end */
 
 
 

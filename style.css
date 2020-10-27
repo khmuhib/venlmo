@@ -768,9 +768,23 @@ nav form .cart {
     width: 100%;
     /*height: 775px;*/
 }
+
+.video_all_slider{
+    width: 107%;
+}
 .caption{
     bottom: 45% !important;
 }
+
+.caption_h1{
+    font-size: 50px;
+    line-height: normal;
+    word-spacing: normal;
+    font-weight: 700;
+    font-family: poppin_semi_bold;
+}
+
+
 .play{
     margin-top: 50px;
 }
@@ -782,6 +796,27 @@ nav form .cart {
     margin-left: 15px;
     border-bottom: 2px solid #f9f9f9;
     padding: 3px;
+}
+
+.video_all_caption_h1 {
+    font-family: poppin_semi_bold;
+    font-size: 16px;
+    line-height: normal;
+    word-spacing: normal;
+    font-weight: 400;
+    margin-top: -232px;
+}
+
+.video_all_caption_div {
+    margin: 0px;
+}
+
+.col_height {
+    height: 273px;
+}
+
+.carousel_item_custom {
+    margin-bottom: -5px!important;
 }
 
 /* parallax section end */
@@ -866,6 +901,23 @@ nav form .cart {
         background-position: center;
         height: 460px;
     }
+
+    .caption_h1{
+        font-size: 18px;
+        line-height: normal;
+        word-spacing: normal;
+        font-weight: 700;
+        font-family: poppin_semi_bold;
+    }
+
+    .caption_div {
+        margin-top: 0px;
+    }
+
+    .caption {
+        bottom: 37% !important;
+    }
+
 
 }
 

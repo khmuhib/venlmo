@@ -582,7 +582,7 @@ ul,ol {
 }
 
 .header_menu li a:hover {
-    color: #F2184B;
+    color: #E76543;
     background-color: transparent;
 }
 
@@ -857,6 +857,10 @@ nav form .cart {
 
 video {
     max-width: 107%!important;
+}
+
+.header_menu li a:focus {
+    color: #E76543;
 }
 
 /* parallax section end */

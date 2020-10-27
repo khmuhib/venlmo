@@ -740,7 +740,7 @@ nav form .cart {
 }
 
 .watch_us {
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: none;
     margin-left: 25px;
     background: #E86544;
@@ -748,15 +748,41 @@ nav form .cart {
     border-radius: 37px;
     color: #fff;
     margin-top: 30px;
-    width: 155px;
+    width: 175px;
     height: 45px;
-    line-height: 45px;
-    padding-left: 17px;
+    line-height: 57px;
+    padding-left: 19px;
     margin-bottom: 100px;
     font-family: poppin_regular;
+    padding-bottom: 60px;
 }
 
+.watch_us span {
+    margin-left: 32px;
+}
 
+.first_slider_text {
+    color: red;
+}
+.video_slider{
+    width: 100%;
+    /*height: 775px;*/
+}
+.caption{
+    bottom: 45% !important;
+}
+.play{
+    margin-top: 50px;
+}
+.play_icon{
+    font-size: 30px;
+    margin-bottom:-8px;
+}
+.play_button{
+    margin-left: 15px;
+    border-bottom: 2px solid #f9f9f9;
+    padding: 3px;
+}
 
 /* parallax section end */
 
@@ -840,6 +866,7 @@ nav form .cart {
         background-position: center;
         height: 460px;
     }
+
 }
 
 /*

@@ -286,39 +286,44 @@
     <!--Video Section Start -->
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
         <div class="carousel-inner">
             <div class="carousel-item active carousel_item_custom">
-                <video class="video_slider" id="video_slider" src="asset/vdo/v1.mp4"></video>
+                <video class="video_slider" id="video_slider1" src="asset/vdo/v1.mp4"></video>
                 <div class="carousel-caption caption m-0 p-0">
                     <h1 class="caption_h1">Our Very Stupid Advice</h1>
-                    <div class="play caption_div"><a onclick="togglePlay()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+                    <div class="play caption_div"><a onclick="togglePlay1()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
 
                 </div>
             </div>
 
             <div class="carousel-item carousel_item_custom">
-                <video class="video_slider" id="video_slider" src="asset/vdo/v1.mp4"></video>
+                <video class="video_slider" id="video_slider2" src="asset/vdo/v1.mp4"></video>
                 <div class="carousel-caption caption m-0 p-0">
                     <h1 class="caption_h1">Our Very Stupid Advice</h1>
-                    <div class="play caption_div"><a onclick="togglePlay()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+                    <div class="play caption_div"><a onclick="togglePlay2()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
 
                 </div>
             </div>
             <div class="carousel-item carousel_item_custom">
-                <video class="video_slider" id="video_slider" src="asset/vdo/v1.mp4"></video>
+                <video class="video_slider" id="video_slider3" src="asset/vdo/v1.mp4"></video>
                 <div class="carousel-caption caption m-0 p-0">
                     <h1 class="caption_h1">Our Very Stupid Advice</h1>
-                    <div class="play caption_div"><a onclick="togglePlay()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+                    <div class="play caption_div"><a onclick="togglePlay3()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
 
                 </div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <svg id="left_arrow" viewBox="0 0 53 100" fill="currentColor" width="1em" height="1em"><path fill="currentColor" d="M5.16 99.14L2.15 96.13 48.6 50.11 2.15 4.3 5.16 1.29 54.62 50.11"></path></svg>
             <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <svg id="right_arrow" viewBox="0 0 53 100" fill="currentColor" width="1em" height="1em"><path fill="currentColor" d="M5.16 99.14L2.15 96.13 48.6 50.11 2.15 4.3 5.16 1.29 54.62 50.11"></path></svg>
             <span class="sr-only">Next</span>
         </a>
     </div>
@@ -327,34 +332,34 @@
     <div class="video_all d-sm-block d-none">
         <div class="row col_height">
             <div class="col-3">
-                <video class="video_all_slider" id="video_slider" src="asset/vdo/v1.mp4"></video>
+                <video class="video_all_slider" id="video_slider4" src="asset/vdo/v1.mp4"></video>
                 <div class="carousel-caption video_all_caption m-0 p-0">
                     <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
-                    <div class="play video_all_caption_div"><a onclick="togglePlay()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+                    <div class="play video_all_caption_div"><a onclick="togglePlay4()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
 
                 </div>
             </div>
             <div class="col-3">
-                <video class="video_all_slider" id="video_slider" src="asset/vdo/v1.mp4"></video>
+                <video class="video_all_slider" id="video_slider5" src="asset/vdo/v1.mp4"></video>
                 <div class="carousel-caption video_all_caption m-0 p-0">
                     <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
-                    <div class="play video_all_caption_div"><a onclick="togglePlay()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+                    <div class="play video_all_caption_div"><a onclick="togglePlay5()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
 
                 </div>
             </div>
             <div class="col-3" style="height: 350px">
-                <video class="video_all_slider" id="video_slider" src="asset/vdo/v1.mp4"></video>
+                <video class="video_all_slider" id="video_slider6" src="asset/vdo/v1.mp4"></video>
                 <div class="carousel-caption video_all_caption m-0 p-0">
                     <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
-                    <div class="play video_all_caption_div"><a onclick="togglePlay()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+                    <div class="play video_all_caption_div"><a onclick="togglePlay6()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
 
                 </div>
             </div>
             <div class="col-3" style="height: 350px">
-                <video class="video_all_slider" id="video_slider" src="asset/vdo/v1.mp4"></video>
+                <video class="video_all_slider" id="video_slider7" src="asset/vdo/v1.mp4"></video>
                 <div class="carousel-caption video_all_caption m-0 p-0">
                     <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
-                    <div class="play video_all_caption_div"><a onclick="togglePlay()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+                    <div class="play video_all_caption_div"><a onclick="togglePlay7()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
 
                 </div>
             </div>
@@ -733,16 +738,73 @@
         })
     </script>
     <script>
-        var vid = document.getElementById("video_slider");
+        var vid1 = document.getElementById("video_slider1");
+        var vid2 = document.getElementById("video_slider2");
+        var vid3 = document.getElementById("video_slider3");
+        var vid4 = document.getElementById("video_slider4");
+        var vid5 = document.getElementById("video_slider5");
+        var vid6 = document.getElementById("video_slider6");
+        var vid7 = document.getElementById("video_slider7");
 
-        function togglePlay() {
-            if (vid.paused) {
-                vid.play();
+        function togglePlay1() {
+            if (vid1.paused) {
+                vid1.play();
             }
             else {
-                vid.pause();
+                vid1.pause();
             }
         };
+        function togglePlay2() {
+            if (vid2.paused) {
+                vid2.play();
+            }
+            else {
+                vid23.pause();
+            }
+        };
+        function togglePlay3() {
+            if (vid3.paused) {
+                vid3.play();
+            }
+            else {
+                vid3.pause();
+            }
+        };
+        function togglePlay4() {
+            if (vid4.paused) {
+                vid4.play();
+            }
+            else {
+                vid4.pause();
+            }
+        };
+        function togglePlay5() {
+            if (vid5.paused) {
+                vid5.play();
+            }
+            else {
+                vid5.pause();
+            }
+        };
+        
+        function togglePlay6() {
+            if (vid6.paused) {
+                vid6.play();
+            }
+            else {
+                vid6.pause();
+            }
+        };
+        
+        function togglePlay7() {
+            if (vid7.paused) {
+                vid7.play();
+            }
+            else {
+                vid7.pause();
+            }
+        };
+        
     </script>
 
 </body>

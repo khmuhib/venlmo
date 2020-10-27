@@ -835,6 +835,7 @@ nav form .cart {
     width:18px;
 }
 .carousel-indicators{
+    display: none;
     bottom: -45px !important;
 }
 .carousel-indicators li {
@@ -961,6 +962,10 @@ video {
     }
     .carousel-control-next svg{
         display: none;
+    }
+    .carousel-indicators{
+        display: inline-flex;
+        bottom: -45px !important;
     }
 
 

@@ -36,6 +36,10 @@ ul,ol {
     list-style: none;
 }
 
+body{
+    position: relative;
+}
+
 
 .new-shape {
     fill: #e76543;
@@ -74,17 +78,20 @@ ul,ol {
 /* Shohidul CSS*/
 
 
-
 .header_bottom_content {
-    background-image: url("images/hb_img.webp");
+    background-image: url("images/hb_img_3.webp");
     background-repeat: no-repeat;
     margin-right: 0px;
     margin-left: 0px;
     background-position: center center;
-    background-size: 115% 110%;
+    background-size: 115% 76%;
     padding: 0px 0px 170px;
     position: relative;
+    margin-top: -134px;
+    margin-bottom: -113px;
 }
+
+
 .header_bottom_contents_texts {
     position: relative;
     top: 77%;
@@ -156,6 +163,41 @@ ul,ol {
     position: relative;
 }
 
+.our_best_side_garalley_img_1_text {
+    position: absolute;
+    top: 170px;
+    left: 150px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.our_best_side_garalley_img_1_text h1 {
+    font-family: poppin_bold;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.our_best_side_garalley_img_1_text hr {
+    width: 20px;
+    background-color: white;
+    border: 4px solid white;
+}
+
+.our_best_side_garalley_img_1_text p {
+    font-family: poppin_bold;
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+}
+
+html {
+/*    max-width: 100%;*/
+    overflow-x: hidden;
+}
+
+
+
 .blur {
     height: 100%;
     width: 100%;
@@ -168,7 +210,11 @@ ul,ol {
 
     display: none;
 }
-
+.blur a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .our_best_side_garalley_img_1:hover .blur{
     display: block;
 }
@@ -217,6 +263,8 @@ ul,ol {
 
 .dillemaz_march_store_gallary_img1 {
     position: relative;
+    transition: .5s; 
+    -webkit-transition: .5s; 
 }
 
 .best_seller {
@@ -247,15 +295,27 @@ ul,ol {
     text-align: center;
 
     display: none;
-
-    transition-duration: 5s;
-
     padding-top: 10px;
+
+    /*
+    visibility: hidden;
+
+    transition: .5s; 
+    -webkit-transition: .5s;
+    */
+
+  
 
 }
 
 .dillemaz_march_store_gallary_img1:hover .blur_store {
+/*    visibility: visible;
+    bottom: 0%;
+    transition: .5s; 
+    -webkit-transition: .5s;*/
+
     display: block;
+
 }
 
 .slider {
@@ -298,6 +358,11 @@ ul,ol {
 
 .owl-next span {
     font-size: 50px;
+}
+
+li:hover a{
+    text-decoration: none;
+
 }
 
 .open_winkel_button {
@@ -345,6 +410,12 @@ ul,ol {
     font-weight: 400;
     color: white;
     margin-top: 40px;
+}
+.volg_one_icon_text2 a:hover{
+    text-decoration: none;
+}
+.volg_one_icon_text3 a:hover{
+    text-decoration: none;
 }
 
 .product_name {
@@ -622,7 +693,9 @@ nav form .cart {
     font-size: 18px;
 }
 
-
+nav a.active{
+    color: #e76543 !important;
+}
 /* header css end */
 
 
@@ -695,11 +768,16 @@ nav form .cart {
     font-size: 27px;
 }
 
+.bg_color {
+    position: relative !important;
+    z-index: 5;
+}
 .bg_color::before {
     position: absolute;
-    background: #f2f2f2;
+    background-color: red;
+/*    background: #f2f2f2;*/
     width: 100%;
-    height: 610px;
+/*    height: 300px;*/
     content: '';
     z-index: -1;
 }
@@ -707,7 +785,8 @@ nav form .cart {
     content: '';
     position: absolute;
     width: 100%;
-    height: 562px;
+    height: 400px;
+/*    height: 562px;*/
     background: #E86544;
     top: 55%;
     z-index: -3;
@@ -772,7 +851,22 @@ nav form .cart {
 
 .video_all_slider{
     width: 107%;
+    position: relative;
 }
+.slider_video{
+    position: relative;
+}
+/* .video_blur {
+    position: absolute;
+    width: 337px;
+    height: 189px;
+    background: #253b3d54;
+    top: 0%;
+    display: none;
+}
+.slider_video:hover .video_blur{
+    display: block;
+} */
 .caption{
     bottom: 45% !important;
 }
@@ -814,6 +908,12 @@ nav form .cart {
     margin: 0px;
 }
 
+.caption_div a:hover{
+      opacity: .7;
+}
+.slider_video:hover .video_all_caption{
+     opacity: .7;
+}
 .col_height {
     height: 273px;
 }

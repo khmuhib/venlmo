@@ -165,8 +165,8 @@ body{
 
 .our_best_side_garalley_img_1_text {
     position: absolute;
-    top: 170px;
-    left: 150px;
+    top: 87px;
+    left: 66px;
     bottom: 0px;
     right: 0px;
     margin: auto;
@@ -1107,6 +1107,15 @@ video {
         bottom: -45px !important;
     }
 
+    .photo_caption_content_div {
+        padding-top: 110px;
+        height: 300px!important;
+    }
+
+    .modal_video_text {
+        display: none;
+    }
+
 
 }
 
@@ -1140,3 +1149,13 @@ video {
 
 
 .mySlides {display:none}
+.close_custom {
+    font-size: 2.5rem!important;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    z-index: 500000000;
+    margin-top: -51px!important;
+    margin-right: 2px!important;
+}

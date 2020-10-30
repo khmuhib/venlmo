@@ -1116,6 +1116,10 @@ video {
         display: none;
     }
 
+    .modal_sub_vdo_desktop {
+        display: none;
+    }
+
 
 }
 

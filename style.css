@@ -276,7 +276,7 @@ html {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 100px;
+    width: 110px;
     text-align: center;
 }
 
@@ -883,15 +883,18 @@ nav a.active{
 
 .play{
     margin-top: 50px;
+
 }
 .play_icon{
     font-size: 30px;
     margin-bottom:-8px;
+    color: white;
 }
 .play_button{
     margin-left: 15px;
     border-bottom: 2px solid #f9f9f9;
     padding: 3px;
+    color: white;
 }
 
 .video_all_caption_h1 {
@@ -900,14 +903,25 @@ nav a.active{
     line-height: normal;
     word-spacing: normal;
     font-weight: 400;
-    margin-top: -232px;
     color: white;
+    text-align: center;
+    vert-align: middle;
 }
 
 .video_all_caption_div {
-    margin: 0px;
+    margin: 0 auto;
+    text-align: center;
 }
 
+.video_caption_content_div {
+    padding-top: 115px;
+}
+.photo_caption_content_div{
+    padding-top: 300px;
+}
+.tt{
+    overflow: hidden;
+}
 .caption_div a:hover{
       opacity: .7;
 }
@@ -921,7 +935,27 @@ nav a.active{
 .carousel_item_custom {
     margin-bottom: -5px!important;
 }
-.carousel-control-prev svg{
+.aaa{
+    background: transparent !important;
+}
+.aaa:hover{
+    background: none;
+    cursor: pointer;
+    box-shadow: transparent;
+}
+
+.a {
+    background: none!important;
+    top: 34%!important;
+}
+.a:hover{
+    background: none;
+}
+.b {
+    background: none!important;
+    top: 34%!important;
+}
+.a svg{
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
@@ -930,7 +964,7 @@ nav a.active{
     height:35px;
     width:18px;
 }
-.carousel-control-next svg{
+.b svg{
     height:35px;
     width:18px;
 }
@@ -962,6 +996,7 @@ video {
 .header_menu li a:focus {
     color: #E76543;
 }
+
 
 /* parallax section end */
 
@@ -1102,3 +1137,6 @@ video {
 @media only screen and (min-width: 1200px) {
 
 }*/
+
+
+.mySlides {display:none}

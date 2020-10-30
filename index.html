@@ -16,8 +16,13 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="css/uikit.min.css">
+    <style>
+        .mySlides {display:none}
+        .mySliders {display:none}
+    </style>
 </head>
 <body data-spy="scroll" data-target="#scroll_spy">
     <!-- header start -->
@@ -294,91 +299,242 @@
 
     <!--Video Section Start -->
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active carousel_item_custom">
-                <video class="video_slider" id="video_slider1" src="asset/vdo/v1.mp4"></video>
-                <div class="carousel-caption caption m-0 p-0">
-                    <h1 class="caption_h1">Our Very Stupid Advice</h1>
-                    <div class="play caption_div"><a onclick="togglePlay1()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
-                    <div class="caption_blur"></div>
+    <div class="container-fluid p-0 m-0">
+        <div class="container-fluid p-0 m-0">
+            <div class="mySliders">
+                <div class="photo_caption_content_div" style="background-image: url('images/f1.jpg'); background-repeat: no-repeat; background-size: cover;width: 100%; height: 700px;">
+                    <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
+                    <div class="play video_all_caption_div" onclick="openModal();currentDiv(1)"><a><i class="far fa-play-circle play_icon"></i><span class="play_button">Play                           Video</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mySliders">
+                <div class="photo_caption_content_div" style="background-image: url('images/f2.jpg'); background-repeat: no-repeat; background-size: cover;width: 100%; height: 700px;">
+                    <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
+                    <div class="play video_all_caption_div" onclick="openModal();currentDiv(2)"><a><i class="far fa-play-circle play_icon"></i><span class="play_button">Play                           Video</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mySliders">
+                <div class="photo_caption_content_div" style="background-image: url('images/f3.jpg'); background-repeat: no-repeat; background-size: cover;width: 100%; height: 700px;">
+                    <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
+                    <div class="play video_all_caption_div" onclick="openModal();currentDiv(3)"><a><i class="far fa-play-circle play_icon"></i><span class="play_button">Play                           Video</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mySliders">
+                <div class="photo_caption_content_div" style="background-image: url('images/f4.jpg'); background-repeat: no-repeat; background-size: cover;width: 100%; height: 700px;">
+                    <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
+                    <div class="play video_all_caption_div" onclick="openModal();currentDiv(4)"><a><i class="far fa-play-circle play_icon"></i><span class="play_button">Play                           Video</span></a>
+                    </div>
                 </div>
             </div>
 
-            <div class="carousel-item carousel_item_custom">
-                <video class="video_slider" id="video_slider2" src="asset/vdo/v1.mp4"></video>
-                <div class="carousel-caption caption m-0 p-0">
-                    <h1 class="caption_h1">Our Very Stupid Advice</h1>
-                    <div class="play caption_div"><a onclick="togglePlay2()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
-                  <div class="caption_blur"></div>
-  
+            <div class="w3-row w3-black w3-center">
+                <span class="w3-display-left  aaa" onclick="nextSlide(-1)" style="top:59% !important; left:30px;transform: rotate(180deg);">
+                    <svg id="right_arrow" viewBox="0 0 53 100" fill="currentColor" width="18px" height="35px" style="background: transparent;"><path fill="currentColor" d="M5.16 99.14L2.15 96.13 48.6 50.11 2.15 4.3 5.16 1.29 54.62 50.11"></path></svg>
+                </span>
+                    <span class="w3-display-right  aaa" onclick="nextSlide(1)" style="top:59% !important;right:30px;">
+                    <svg id="right_arrow" viewBox="0 0 53 100" fill="currentColor" width="18px" height="35px"><path fill="currentColor" d="M5.16 99.14L2.15 96.13 48.6 50.11 2.15 4.3 5.16 1.29 54.62 50.11"></path></svg>
+                </span>
+<!--                <span class="w3-display-left w3-btn aa" onclick="nextSlide(-1)">❮</span>-->
+<!--                <span class="w3-display-right w3-btn bb" onclick="nextSlide(1)">❯</span>-->
+                <div class="w3-col s3 m-0 p-0" onclick="currencurrentSlider(1)">
+                    <div class="video_caption_content_div" style="background-image: url('images/f1.jpg'); background-repeat: no-repeat; background-size: cover;width: 100%; height: 265px;">
+                        <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
+                        <div class="play video_all_caption_div" onclick="openModal();currentDiv(1)"><a><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item carousel_item_custom">
-                <video class="video_slider" id="video_slider3" src="asset/vdo/v1.mp4"></video>
-                <div class="carousel-caption caption m-0 p-0">
-                    <h1 class="caption_h1">Our Very Stupid Advice</h1>
-                    <div class="play caption_div"><a onclick="togglePlay3()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
-                    <div class="caption_blur"></div>
+                <div class="w3-col s3 m-0 p-0" onclick="currencurrentSlider(2)">
+                    <div class="video_caption_content_div" style="background-image: url('images/f2.jpg'); background-repeat: no-repeat; background-size: cover;width: 100%; height: 265px;">
+                        <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
+                        <div class="play video_all_caption_div" onclick="openModal();currentDiv(2)"><a><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col s3 m-0 p-0" onclick="currencurrentSlider(3)">
+                    <div class="video_caption_content_div" style="background-image: url('images/f3.jpg'); background-repeat: no-repeat; background-size: cover;width: 100%; height: 265px;">
+                        <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
+                        <div class="play video_all_caption_div" onclick="openModal();currentDiv(3)"><a><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col s3 m-0 p-0" onclick="currencurrentSlider(4)">
+                    <div class="video_caption_content_div" style="background-image: url('images/f4.jpg'); background-repeat: no-repeat; background-size: cover;width: 100%; height: 265px;">
+                        <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
+                        <div class="play video_all_caption_div" onclick="openModal();currentDiv(4)"><a><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <svg id="left_arrow" viewBox="0 0 53 100" fill="currentColor" width="1em" height="1em"><path fill="currentColor" d="M5.16 99.14L2.15 96.13 48.6 50.11 2.15 4.3 5.16 1.29 54.62 50.11"></path></svg>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <svg id="right_arrow" viewBox="0 0 53 100" fill="currentColor" width="1em" height="1em"><path fill="currentColor" d="M5.16 99.14L2.15 96.13 48.6 50.11 2.15 4.3 5.16 1.29 54.62 50.11"></path></svg>
-            <span class="sr-only">Next</span>
-        </a>
+        <!--  end  front Section-->
+
+        <div id="myModal" class="w3-modal w3-black">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="w3-modal-content" style="width: 95%">
+                <div class="w3-content" style="max-width:100%">
+                    <div class="mySlides" id="01">
+                        <div class="video w3-col s8" style="max-height: 350px">
+                            <video class="" controls autoplay style="width:100%;max-height: 350px;cursor:pointer">
+                                <source src="asset/vdo/v1.mp4" type="video/mp4">
+                                Your browser does not support HTML video.
+                            </video>
+                        </div>
+                        <div class="text w3-col s4" style="overflow-y: scroll;overflow-x:hidden; max-height: 350px" >
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cum dolores eveniet in provident qui quis quod, ut vero. Dolor facilis obcaecati veniam vitae! Deserunt quam qui sed! Eligendi expedita explicabo labore nostrum obcaecati quas quasi! Ab accusamus aliquam aliquid culpa, debitis deleniti distinctio dolorem dolores explicabo id iusto laboriosam libero maxime nam natus numquam obcaecati odio omnis praesentium provident quod rem sed similique sit temporibus, vitae voluptatem voluptatibus? Eligendi eos iusto maiores nobis nulla numquam soluta? Enim harum ipsum molestiae obcaecati officia quaerat recusandae repudiandae sunt vel? At commodi consequatur sapiente similique soluta tempora. Blanditiis consequatur cumque, deserunt ducimus est necessitatibus quidem. Cupiditate dolores fuga nemo reprehenderit suscipit. Fugiat obcaecati placeat praesentium quam, rem velit vero! Corporis culpa libero quae quidem quod. Consequatur dicta earum laborum maiores saepe. Laboriosam, officiis sed. Aspernatur aut autem consectetur consequuntur delectus dignissimos doloribus dolorum, eligendi et labore laborum non, quae rem! Consectetur cum deleniti earum facere hic ipsa laborum magnam modi mollitia nemo neque rerum similique soluta voluptas, voluptatum! A aperiam assumenda atque consectetur consequuntur culpa, dignissimos distinctio dolore ducimus explicabo harum impedit labore maiores minus neque officia, optio possimus praesentium provident quisquam repellat sequi sit soluta tenetur totam ut veniam voluptas, voluptates voluptatibus voluptatum. Cum delectus deserunt expedita fugiat fugit hic ipsa ipsam iste maxime nam obcaecati officiis omnis, perspiciatis quae quisquam quod ratione recusandae, sit! Accusamus aliquid, at blanditiis commodi delectus eos et harum, ipsa itaque magnam quam quibusdam recusandae sit tempora ullam voluptatem, voluptates. Ad, quod, rem? Adipisci aperiam assumenda delectus excepturi expedita, fuga laboriosam laborum maiores maxime quas, sit soluta? Ad aut beatae commodi dicta doloribus enim eveniet explicabo fugit, impedit incidunt ipsa ipsum iure labore molestiae nam necessitatibus neque nihil obcaecati, quam quis quos similique sint ut velit voluptate? Blanditiis culpa delectus doloremque ex illum ipsam maiores, nihil, nisi, pariatur perspiciatis quod ratione sapiente sunt temporibus vel. Accusantium aliquam amet consectetur culpa deserunt ea enim eveniet illo incidunt ipsam laboriosam laborum maxime molestias, mollitia numquam obcaecati officia placeat possimus quos reiciendis repellendus saepe sapiente sed tempore unde voluptas voluptates voluptatum. Commodi, laboriosam, molestias. Consequatur earum ipsam laudantium nisi nulla odio, suscipit! Adipisci alias assumenda consequuntur dignissimos dolorum explicabo facilis illo ipsa libero officiis optio placeat quidem quo repellat, reprehenderit tempora ut. Accusamus animi aperiam delectus earum, eos facilis maxime modi nesciunt nobis! At commodi eligendi eum facilis harum itaque labore magni necessitatibus obcaecati porro, quas quis reiciendis repellendus suscipit tenetur unde ut veniam voluptatibus? Ab esse eum iusto modi praesentium quam quas, ut! Atque libero numquam quaerat quia tempora! Ab earum expedita neque quisquam ullam! Amet atque dolores est eum hic illo, illum molestiae mollitia praesentium quae quos reprehenderit sunt? Ducimus ea laboriosam provident quaerat vel. Accusantium aliquid, amet at atque blanditiis commodi consequatur cumque distinctio dolore ea earum eligendi eveniet expedita illo laboriosam minima molestias nobis non numquam odio officia pariatur, provident quibusdam quidem ratione repudiandae rerum saepe similique soluta suscipit tempora totam ut velit veniam veritatis vero vitae. Accusamus at blanditiis consectetur culpa cupiditate ea eligendi et eum fugiat hic ipsa ipsam itaque laboriosam magni minus molestiae nam nobis pariatur, quaerat quibusdam quisquam quod reiciendis sint sit tempore temporibus ullam unde! Architecto culpa nobis quae recusandae saepe. A ad beatae consectetur dolorem ipsa molestias nulla veniam? Aliquid ea impedit laborum minima placeat quod sint veniam. A accusantium aliquam architecto aspernatur assumenda autem consectetur corporis cum debitis, delectus dignissimos distinctio dolorem error esse eveniet explicabo fugit impedit incidunt laborum magnam magni, minus, nihil obcaecati odio optio porro possimus praesentium quas quis quo reiciendis rem reprehenderit sapiente suscipit tempore totam veniam? A, accusantium ad adipisci assumenda consectetur cumque dicta dolore doloremque dolores eaque enim est fugit laborum magnam maiores, minus modi obcaecati odit officia perferendis porro quae quaerat, quas qui quidem repellat reprehenderit similique sit tempora voluptates. A atque dolores doloribus earum eligendi error eum exercitationem fugiat harum hic inventore iure labore, nihil nisi, quaerat sapiente similique, suscipit unde vel veniam vero voluptatem voluptatibus? Animi, corporis cumque dolore enim et facere iste, magnam officia recusandae reiciendis soluta vel voluptas voluptatem. Ab delectus doloremque doloribus earum eos iste magni nemo nobis odio temporibus. Accusantium atque doloribus fugit nostrum perspiciatis, quia sed sunt totam. Accusantium amet aut, autem blanditiis incidunt laudantium mollitia, optio quibusdam reprehenderit repudiandae tempora tenetur ullam ut vero, voluptas? Ad animi eos ex excepturi inventore labore obcaecati, quas ratione saepe totam veniam voluptatibus? Amet architecto culpa dicta dolore eligendi enim error est explicabo fugit hic incidunt ipsa iste magni minus nemo obcaecati omnis optio placeat porro possimus quibusdam quos, sequi similique temporibus voluptate? Aliquam aliquid amet aperiam, architecto aspernatur assumenda atque commodi consectetur deleniti dicta dolorem ducimus error est et fuga fugit itaque laudantium maiores minima modi optio porro quibusdam sequi suscipit tempora ullam voluptates voluptatum. Commodi dolor praesentium similique! Architecto deleniti dolor doloremque facere illum natus necessitatibus, neque praesentium quo recusandae repudiandae sint suscipit ullam vel velit veniam vero voluptatibus? Accusantium amet atque autem cumque, doloribus fuga ipsa magnam obcaecati placeat provident quibusdam quis ratione, repellat saepe sapiente tempora tenetur ut veritatis voluptate voluptates! Aliquam culpa cum cumque doloremque eius error facilis illum ipsum itaque magnam magni non nostrum officiis quaerat, quo reiciendis reprehenderit tempora tempore ullam voluptas? Adipisci consectetur deserunt eius, eligendi exercitationem fugit harum incidunt itaque laborum omnis recusandae repellendus, reprehenderit sapiente sunt vel. Animi aperiam aut blanditiis delectus dignissimos dolor doloremque doloribus error exercitationem hic laborum magni, molestiae mollitia nesciunt nulla obcaecati omnis perspiciatis quasi quos sit sunt tempora totam vitae! Commodi consequatur eum illo officia omnis perspiciatis possimus quae quam, quisquam rem sint velit. Accusantium adipisci aperiam expedita illum mollitia nobis officia perferendis quisquam voluptate voluptatem! Alias dolor error inventore necessitatibus recusandae repellendus soluta totam voluptatem? Aliquam aliquid, commodi corporis eaque eligendi et expedita harum in laboriosam laborum molestiae nihil qui sed ut veniam. A accusamus ad animi assumenda at consectetur, cupiditate dolor dolorum ducimus eaque earum enim eos esse eveniet facere hic inventore itaque magnam quae quia quidem quisquam saepe sint suscipit ut voluptatibus voluptatum. Alias doloremque hic quia similique suscipit?</p>
+                        </div>
+                    </div>
+                    <div class="mySlides" id="02">
+                        <div class="video w3-col s8" style="max-height: 350px">
+                            <video class="" controls style="width:100%;max-height: 350px;cursor:pointer">
+                                <source src="asset/vdo/v2.mp4" type="video/mp4">
+                                Your browser does not support HTML video.
+                            </video>
+                        </div>
+                        <div class="text w3-col s4" style="overflow-y: scroll;overflow-x:hidden; max-height: 350px" >
+                            <p>02Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cum dolores eveniet in provident qui quis quod, ut vero. Dolor facilis obcaecati veniam vitae! Deserunt quam qui sed! Eligendi expedita explicabo labore nostrum obcaecati quas quasi! Ab accusamus aliquam aliquid culpa, debitis deleniti distinctio dolorem dolores explicabo id iusto laboriosam libero maxime nam natus numquam obcaecati odio omnis praesentium provident quod rem sed similique sit temporibus, vitae voluptatem voluptatibus? Eligendi eos iusto maiores nobis nulla numquam soluta? Enim harum ipsum molestiae obcaecati officia quaerat recusandae repudiandae sunt vel? At commodi consequatur sapiente similique soluta tempora. Blanditiis consequatur cumque, deserunt ducimus est necessitatibus quidem. Cupiditate dolores fuga nemo reprehenderit suscipit. Fugiat obcaecati placeat praesentium quam, rem velit vero! Corporis culpa libero quae quidem quod. Consequatur dicta earum laborum maiores saepe. Laboriosam, officiis sed. Aspernatur aut autem consectetur consequuntur delectus dignissimos doloribus dolorum, eligendi et labore laborum non, quae rem! Consectetur cum deleniti earum facere hic ipsa laborum magnam modi mollitia nemo neque rerum similique soluta voluptas, voluptatum! A aperiam assumenda atque consectetur consequuntur culpa, dignissimos distinctio dolore ducimus explicabo harum impedit labore maiores minus neque officia, optio possimus praesentium provident quisquam repellat sequi sit soluta tenetur totam ut veniam voluptas, voluptates voluptatibus voluptatum. Cum delectus deserunt expedita fugiat fugit hic ipsa ipsam iste maxime nam obcaecati officiis omnis, perspiciatis quae quisquam quod ratione recusandae, sit! Accusamus aliquid, at blanditiis commodi delectus eos et harum, ipsa itaque magnam quam quibusdam recusandae sit tempora ullam voluptatem, voluptates. Ad, quod, rem? Adipisci aperiam assumenda delectus excepturi expedita, fuga laboriosam laborum maiores maxime quas, sit soluta? Ad aut beatae commodi dicta doloribus enim eveniet explicabo fugit, impedit incidunt ipsa ipsum iure labore molestiae nam necessitatibus neque nihil obcaecati, quam quis quos similique sint ut velit voluptate? Blanditiis culpa delectus doloremque ex illum ipsam maiores, nihil, nisi, pariatur perspiciatis quod ratione sapiente sunt temporibus vel. Accusantium aliquam amet consectetur culpa deserunt ea enim eveniet illo incidunt ipsam laboriosam laborum maxime molestias, mollitia numquam obcaecati officia placeat possimus quos reiciendis repellendus saepe sapiente sed tempore unde voluptas voluptates voluptatum. Commodi, laboriosam, molestias. Consequatur earum ipsam laudantium nisi nulla odio, suscipit! Adipisci alias assumenda consequuntur dignissimos dolorum explicabo facilis illo ipsa libero officiis optio placeat quidem quo repellat, reprehenderit tempora ut. Accusamus animi aperiam delectus earum, eos facilis maxime modi nesciunt nobis! At commodi eligendi eum facilis harum itaque labore magni necessitatibus obcaecati porro, quas quis reiciendis repellendus suscipit tenetur unde ut veniam voluptatibus? Ab esse eum iusto modi praesentium quam quas, ut! Atque libero numquam quaerat quia tempora! Ab earum expedita neque quisquam ullam! Amet atque dolores est eum hic illo, illum molestiae mollitia praesentium quae quos reprehenderit sunt? Ducimus ea laboriosam provident quaerat vel. Accusantium aliquid, amet at atque blanditiis commodi consequatur cumque distinctio dolore ea earum eligendi eveniet expedita illo laboriosam minima molestias nobis non numquam odio officia pariatur, provident quibusdam quidem ratione repudiandae rerum saepe similique soluta suscipit tempora totam ut velit veniam veritatis vero vitae. Accusamus at blanditiis consectetur culpa cupiditate ea eligendi et eum fugiat hic ipsa ipsam itaque laboriosam magni minus molestiae nam nobis pariatur, quaerat quibusdam quisquam quod reiciendis sint sit tempore temporibus ullam unde! Architecto culpa nobis quae recusandae saepe. A ad beatae consectetur dolorem ipsa molestias nulla veniam? Aliquid ea impedit laborum minima placeat quod sint veniam. A accusantium aliquam architecto aspernatur assumenda autem consectetur corporis cum debitis, delectus dignissimos distinctio dolorem error esse eveniet explicabo fugit impedit incidunt laborum magnam magni, minus, nihil obcaecati odio optio porro possimus praesentium quas quis quo reiciendis rem reprehenderit sapiente suscipit tempore totam veniam? A, accusantium ad adipisci assumenda consectetur cumque dicta dolore doloremque dolores eaque enim est fugit laborum magnam maiores, minus modi obcaecati odit officia perferendis porro quae quaerat, quas qui quidem repellat reprehenderit similique sit tempora voluptates. A atque dolores doloribus earum eligendi error eum exercitationem fugiat harum hic inventore iure labore, nihil nisi, quaerat sapiente similique, suscipit unde vel veniam vero voluptatem voluptatibus? Animi, corporis cumque dolore enim et facere iste, magnam officia recusandae reiciendis soluta vel voluptas voluptatem. Ab delectus doloremque doloribus earum eos iste magni nemo nobis odio temporibus. Accusantium atque doloribus fugit nostrum perspiciatis, quia sed sunt totam. Accusantium amet aut, autem blanditiis incidunt laudantium mollitia, optio quibusdam reprehenderit repudiandae tempora tenetur ullam ut vero, voluptas? Ad animi eos ex excepturi inventore labore obcaecati, quas ratione saepe totam veniam voluptatibus? Amet architecto culpa dicta dolore eligendi enim error est explicabo fugit hic incidunt ipsa iste magni minus nemo obcaecati omnis optio placeat porro possimus quibusdam quos, sequi similique temporibus voluptate? Aliquam aliquid amet aperiam, architecto aspernatur assumenda atque commodi consectetur deleniti dicta dolorem ducimus error est et fuga fugit itaque laudantium maiores minima modi optio porro quibusdam sequi suscipit tempora ullam voluptates voluptatum. Commodi dolor praesentium similique! Architecto deleniti dolor doloremque facere illum natus necessitatibus, neque praesentium quo recusandae repudiandae sint suscipit ullam vel velit veniam vero voluptatibus? Accusantium amet atque autem cumque, doloribus fuga ipsa magnam obcaecati placeat provident quibusdam quis ratione, repellat saepe sapiente tempora tenetur ut veritatis voluptate voluptates! Aliquam culpa cum cumque doloremque eius error facilis illum ipsum itaque magnam magni non nostrum officiis quaerat, quo reiciendis reprehenderit tempora tempore ullam voluptas? Adipisci consectetur deserunt eius, eligendi exercitationem fugit harum incidunt itaque laborum omnis recusandae repellendus, reprehenderit sapiente sunt vel. Animi aperiam aut blanditiis delectus dignissimos dolor doloremque doloribus error exercitationem hic laborum magni, molestiae mollitia nesciunt nulla obcaecati omnis perspiciatis quasi quos sit sunt tempora totam vitae! Commodi consequatur eum illo officia omnis perspiciatis possimus quae quam, quisquam rem sint velit. Accusantium adipisci aperiam expedita illum mollitia nobis officia perferendis quisquam voluptate voluptatem! Alias dolor error inventore necessitatibus recusandae repellendus soluta totam voluptatem? Aliquam aliquid, commodi corporis eaque eligendi et expedita harum in laboriosam laborum molestiae nihil qui sed ut veniam. A accusamus ad animi assumenda at consectetur, cupiditate dolor dolorum ducimus eaque earum enim eos esse eveniet facere hic inventore itaque magnam quae quia quidem quisquam saepe sint suscipit ut voluptatibus voluptatum. Alias doloremque hic quia similique suscipit?</p>
+                        </div>
+                    </div>
+                    <div class="mySlides" id="03">
+                        <div class="video w3-col s8" style="max-height: 350px">
+                            <video class="" controls style="width:100%;max-height: 350px;cursor:pointer">
+                                <source src="asset/vdo/v3.mp4" type="video/mp4">
+                                Your browser does not support HTML video.
+                            </video>
+                        </div>
+                        <div class="text w3-col s4" style="overflow-y: scroll;overflow-x:hidden; max-height: 350px" >
+                            <p>03. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cum dolores eveniet in provident qui quis quod, ut vero. Dolor facilis obcaecati veniam vitae! Deserunt quam qui sed! Eligendi expedita explicabo labore nostrum obcaecati quas quasi! Ab accusamus aliquam aliquid culpa, debitis deleniti distinctio dolorem dolores explicabo id iusto laboriosam libero maxime nam natus numquam obcaecati odio omnis praesentium provident quod rem sed similique sit temporibus, vitae voluptatem voluptatibus? Eligendi eos iusto maiores nobis nulla numquam soluta? Enim harum ipsum molestiae obcaecati officia quaerat recusandae repudiandae sunt vel? At commodi consequatur sapiente similique soluta tempora. Blanditiis consequatur cumque, deserunt ducimus est necessitatibus quidem. Cupiditate dolores fuga nemo reprehenderit suscipit. Fugiat obcaecati placeat praesentium quam, rem velit vero! Corporis culpa libero quae quidem quod. Consequatur dicta earum laborum maiores saepe. Laboriosam, officiis sed. Aspernatur aut autem consectetur consequuntur delectus dignissimos doloribus dolorum, eligendi et labore laborum non, quae rem! Consectetur cum deleniti earum facere hic ipsa laborum magnam modi mollitia nemo neque rerum similique soluta voluptas, voluptatum! A aperiam assumenda atque consectetur consequuntur culpa, dignissimos distinctio dolore ducimus explicabo harum impedit labore maiores minus neque officia, optio possimus praesentium provident quisquam repellat sequi sit soluta tenetur totam ut veniam voluptas, voluptates voluptatibus voluptatum. Cum delectus deserunt expedita fugiat fugit hic ipsa ipsam iste maxime nam obcaecati officiis omnis, perspiciatis quae quisquam quod ratione recusandae, sit! Accusamus aliquid, at blanditiis commodi delectus eos et harum, ipsa itaque magnam quam quibusdam recusandae sit tempora ullam voluptatem, voluptates. Ad, quod, rem? Adipisci aperiam assumenda delectus excepturi expedita, fuga laboriosam laborum maiores maxime quas, sit soluta? Ad aut beatae commodi dicta doloribus enim eveniet explicabo fugit, impedit incidunt ipsa ipsum iure labore molestiae nam necessitatibus neque nihil obcaecati, quam quis quos similique sint ut velit voluptate? Blanditiis culpa delectus doloremque ex illum ipsam maiores, nihil, nisi, pariatur perspiciatis quod ratione sapiente sunt temporibus vel. Accusantium aliquam amet consectetur culpa deserunt ea enim eveniet illo incidunt ipsam laboriosam laborum maxime molestias, mollitia numquam obcaecati officia placeat possimus quos reiciendis repellendus saepe sapiente sed tempore unde voluptas voluptates voluptatum. Commodi, laboriosam, molestias. Consequatur earum ipsam laudantium nisi nulla odio, suscipit! Adipisci alias assumenda consequuntur dignissimos dolorum explicabo facilis illo ipsa libero officiis optio placeat quidem quo repellat, reprehenderit tempora ut. Accusamus animi aperiam delectus earum, eos facilis maxime modi nesciunt nobis! At commodi eligendi eum facilis harum itaque labore magni necessitatibus obcaecati porro, quas quis reiciendis repellendus suscipit tenetur unde ut veniam voluptatibus? Ab esse eum iusto modi praesentium quam quas, ut! Atque libero numquam quaerat quia tempora! Ab earum expedita neque quisquam ullam! Amet atque dolores est eum hic illo, illum molestiae mollitia praesentium quae quos reprehenderit sunt? Ducimus ea laboriosam provident quaerat vel. Accusantium aliquid, amet at atque blanditiis commodi consequatur cumque distinctio dolore ea earum eligendi eveniet expedita illo laboriosam minima molestias nobis non numquam odio officia pariatur, provident quibusdam quidem ratione repudiandae rerum saepe similique soluta suscipit tempora totam ut velit veniam veritatis vero vitae. Accusamus at blanditiis consectetur culpa cupiditate ea eligendi et eum fugiat hic ipsa ipsam itaque laboriosam magni minus molestiae nam nobis pariatur, quaerat quibusdam quisquam quod reiciendis sint sit tempore temporibus ullam unde! Architecto culpa nobis quae recusandae saepe. A ad beatae consectetur dolorem ipsa molestias nulla veniam? Aliquid ea impedit laborum minima placeat quod sint veniam. A accusantium aliquam architecto aspernatur assumenda autem consectetur corporis cum debitis, delectus dignissimos distinctio dolorem error esse eveniet explicabo fugit impedit incidunt laborum magnam magni, minus, nihil obcaecati odio optio porro possimus praesentium quas quis quo reiciendis rem reprehenderit sapiente suscipit tempore totam veniam? A, accusantium ad adipisci assumenda consectetur cumque dicta dolore doloremque dolores eaque enim est fugit laborum magnam maiores, minus modi obcaecati odit officia perferendis porro quae quaerat, quas qui quidem repellat reprehenderit similique sit tempora voluptates. A atque dolores doloribus earum eligendi error eum exercitationem fugiat harum hic inventore iure labore, nihil nisi, quaerat sapiente similique, suscipit unde vel veniam vero voluptatem voluptatibus? Animi, corporis cumque dolore enim et facere iste, magnam officia recusandae reiciendis soluta vel voluptas voluptatem. Ab delectus doloremque doloribus earum eos iste magni nemo nobis odio temporibus. Accusantium atque doloribus fugit nostrum perspiciatis, quia sed sunt totam. Accusantium amet aut, autem blanditiis incidunt laudantium mollitia, optio quibusdam reprehenderit repudiandae tempora tenetur ullam ut vero, voluptas? Ad animi eos ex excepturi inventore labore obcaecati, quas ratione saepe totam veniam voluptatibus? Amet architecto culpa dicta dolore eligendi enim error est explicabo fugit hic incidunt ipsa iste magni minus nemo obcaecati omnis optio placeat porro possimus quibusdam quos, sequi similique temporibus voluptate? Aliquam aliquid amet aperiam, architecto aspernatur assumenda atque commodi consectetur deleniti dicta dolorem ducimus error est et fuga fugit itaque laudantium maiores minima modi optio porro quibusdam sequi suscipit tempora ullam voluptates voluptatum. Commodi dolor praesentium similique! Architecto deleniti dolor doloremque facere illum natus necessitatibus, neque praesentium quo recusandae repudiandae sint suscipit ullam vel velit veniam vero voluptatibus? Accusantium amet atque autem cumque, doloribus fuga ipsa magnam obcaecati placeat provident quibusdam quis ratione, repellat saepe sapiente tempora tenetur ut veritatis voluptate voluptates! Aliquam culpa cum cumque doloremque eius error facilis illum ipsum itaque magnam magni non nostrum officiis quaerat, quo reiciendis reprehenderit tempora tempore ullam voluptas? Adipisci consectetur deserunt eius, eligendi exercitationem fugit harum incidunt itaque laborum omnis recusandae repellendus, reprehenderit sapiente sunt vel. Animi aperiam aut blanditiis delectus dignissimos dolor doloremque doloribus error exercitationem hic laborum magni, molestiae mollitia nesciunt nulla obcaecati omnis perspiciatis quasi quos sit sunt tempora totam vitae! Commodi consequatur eum illo officia omnis perspiciatis possimus quae quam, quisquam rem sint velit. Accusantium adipisci aperiam expedita illum mollitia nobis officia perferendis quisquam voluptate voluptatem! Alias dolor error inventore necessitatibus recusandae repellendus soluta totam voluptatem? Aliquam aliquid, commodi corporis eaque eligendi et expedita harum in laboriosam laborum molestiae nihil qui sed ut veniam. A accusamus ad animi assumenda at consectetur, cupiditate dolor dolorum ducimus eaque earum enim eos esse eveniet facere hic inventore itaque magnam quae quia quidem quisquam saepe sint suscipit ut voluptatibus voluptatum. Alias doloremque hic quia similique suscipit?</p>
+                        </div>
+                    </div>
+                    <div class="mySlides" id="04">
+                        <div class="video w3-col s8" style="max-height: 350px">
+                            <video class="" controls style="width:100%;max-height: 350px;cursor:pointer">
+                                <source src="asset/vdo/v1.mp4" type="video/mp4">
+                                Your browser does not support HTML video.
+                            </video>
+                        </div>
+                        <div class="text w3-col s4" style="overflow-y: scroll;overflow-x:hidden; max-height: 350px" >
+                            <p>04. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cum dolores eveniet in provident qui quis quod, ut vero. Dolor facilis obcaecati veniam vitae! Deserunt quam qui sed! Eligendi expedita explicabo labore nostrum obcaecati quas quasi! Ab accusamus aliquam aliquid culpa, debitis deleniti distinctio dolorem dolores explicabo id iusto laboriosam libero maxime nam natus numquam obcaecati odio omnis praesentium provident quod rem sed similique sit temporibus, vitae voluptatem voluptatibus? Eligendi eos iusto maiores nobis nulla numquam soluta? Enim harum ipsum molestiae obcaecati officia quaerat recusandae repudiandae sunt vel? At commodi consequatur sapiente similique soluta tempora. Blanditiis consequatur cumque, deserunt ducimus est necessitatibus quidem. Cupiditate dolores fuga nemo reprehenderit suscipit. Fugiat obcaecati placeat praesentium quam, rem velit vero! Corporis culpa libero quae quidem quod. Consequatur dicta earum laborum maiores saepe. Laboriosam, officiis sed. Aspernatur aut autem consectetur consequuntur delectus dignissimos doloribus dolorum, eligendi et labore laborum non, quae rem! Consectetur cum deleniti earum facere hic ipsa laborum magnam modi mollitia nemo neque rerum similique soluta voluptas, voluptatum! A aperiam assumenda atque consectetur consequuntur culpa, dignissimos distinctio dolore ducimus explicabo harum impedit labore maiores minus neque officia, optio possimus praesentium provident quisquam repellat sequi sit soluta tenetur totam ut veniam voluptas, voluptates voluptatibus voluptatum. Cum delectus deserunt expedita fugiat fugit hic ipsa ipsam iste maxime nam obcaecati officiis omnis, perspiciatis quae quisquam quod ratione recusandae, sit! Accusamus aliquid, at blanditiis commodi delectus eos et harum, ipsa itaque magnam quam quibusdam recusandae sit tempora ullam voluptatem, voluptates. Ad, quod, rem? Adipisci aperiam assumenda delectus excepturi expedita, fuga laboriosam laborum maiores maxime quas, sit soluta? Ad aut beatae commodi dicta doloribus enim eveniet explicabo fugit, impedit incidunt ipsa ipsum iure labore molestiae nam necessitatibus neque nihil obcaecati, quam quis quos similique sint ut velit voluptate? Blanditiis culpa delectus doloremque ex illum ipsam maiores, nihil, nisi, pariatur perspiciatis quod ratione sapiente sunt temporibus vel. Accusantium aliquam amet consectetur culpa deserunt ea enim eveniet illo incidunt ipsam laboriosam laborum maxime molestias, mollitia numquam obcaecati officia placeat possimus quos reiciendis repellendus saepe sapiente sed tempore unde voluptas voluptates voluptatum. Commodi, laboriosam, molestias. Consequatur earum ipsam laudantium nisi nulla odio, suscipit! Adipisci alias assumenda consequuntur dignissimos dolorum explicabo facilis illo ipsa libero officiis optio placeat quidem quo repellat, reprehenderit tempora ut. Accusamus animi aperiam delectus earum, eos facilis maxime modi nesciunt nobis! At commodi eligendi eum facilis harum itaque labore magni necessitatibus obcaecati porro, quas quis reiciendis repellendus suscipit tenetur unde ut veniam voluptatibus? Ab esse eum iusto modi praesentium quam quas, ut! Atque libero numquam quaerat quia tempora! Ab earum expedita neque quisquam ullam! Amet atque dolores est eum hic illo, illum molestiae mollitia praesentium quae quos reprehenderit sunt? Ducimus ea laboriosam provident quaerat vel. Accusantium aliquid, amet at atque blanditiis commodi consequatur cumque distinctio dolore ea earum eligendi eveniet expedita illo laboriosam minima molestias nobis non numquam odio officia pariatur, provident quibusdam quidem ratione repudiandae rerum saepe similique soluta suscipit tempora totam ut velit veniam veritatis vero vitae. Accusamus at blanditiis consectetur culpa cupiditate ea eligendi et eum fugiat hic ipsa ipsam itaque laboriosam magni minus molestiae nam nobis pariatur, quaerat quibusdam quisquam quod reiciendis sint sit tempore temporibus ullam unde! Architecto culpa nobis quae recusandae saepe. A ad beatae consectetur dolorem ipsa molestias nulla veniam? Aliquid ea impedit laborum minima placeat quod sint veniam. A accusantium aliquam architecto aspernatur assumenda autem consectetur corporis cum debitis, delectus dignissimos distinctio dolorem error esse eveniet explicabo fugit impedit incidunt laborum magnam magni, minus, nihil obcaecati odio optio porro possimus praesentium quas quis quo reiciendis rem reprehenderit sapiente suscipit tempore totam veniam? A, accusantium ad adipisci assumenda consectetur cumque dicta dolore doloremque dolores eaque enim est fugit laborum magnam maiores, minus modi obcaecati odit officia perferendis porro quae quaerat, quas qui quidem repellat reprehenderit similique sit tempora voluptates. A atque dolores doloribus earum eligendi error eum exercitationem fugiat harum hic inventore iure labore, nihil nisi, quaerat sapiente similique, suscipit unde vel veniam vero voluptatem voluptatibus? Animi, corporis cumque dolore enim et facere iste, magnam officia recusandae reiciendis soluta vel voluptas voluptatem. Ab delectus doloremque doloribus earum eos iste magni nemo nobis odio temporibus. Accusantium atque doloribus fugit nostrum perspiciatis, quia sed sunt totam. Accusantium amet aut, autem blanditiis incidunt laudantium mollitia, optio quibusdam reprehenderit repudiandae tempora tenetur ullam ut vero, voluptas? Ad animi eos ex excepturi inventore labore obcaecati, quas ratione saepe totam veniam voluptatibus? Amet architecto culpa dicta dolore eligendi enim error est explicabo fugit hic incidunt ipsa iste magni minus nemo obcaecati omnis optio placeat porro possimus quibusdam quos, sequi similique temporibus voluptate? Aliquam aliquid amet aperiam, architecto aspernatur assumenda atque commodi consectetur deleniti dicta dolorem ducimus error est et fuga fugit itaque laudantium maiores minima modi optio porro quibusdam sequi suscipit tempora ullam voluptates voluptatum. Commodi dolor praesentium similique! Architecto deleniti dolor doloremque facere illum natus necessitatibus, neque praesentium quo recusandae repudiandae sint suscipit ullam vel velit veniam vero voluptatibus? Accusantium amet atque autem cumque, doloribus fuga ipsa magnam obcaecati placeat provident quibusdam quis ratione, repellat saepe sapiente tempora tenetur ut veritatis voluptate voluptates! Aliquam culpa cum cumque doloremque eius error facilis illum ipsum itaque magnam magni non nostrum officiis quaerat, quo reiciendis reprehenderit tempora tempore ullam voluptas? Adipisci consectetur deserunt eius, eligendi exercitationem fugit harum incidunt itaque laborum omnis recusandae repellendus, reprehenderit sapiente sunt vel. Animi aperiam aut blanditiis delectus dignissimos dolor doloremque doloribus error exercitationem hic laborum magni, molestiae mollitia nesciunt nulla obcaecati omnis perspiciatis quasi quos sit sunt tempora totam vitae! Commodi consequatur eum illo officia omnis perspiciatis possimus quae quam, quisquam rem sint velit. Accusantium adipisci aperiam expedita illum mollitia nobis officia perferendis quisquam voluptate voluptatem! Alias dolor error inventore necessitatibus recusandae repellendus soluta totam voluptatem? Aliquam aliquid, commodi corporis eaque eligendi et expedita harum in laboriosam laborum molestiae nihil qui sed ut veniam. A accusamus ad animi assumenda at consectetur, cupiditate dolor dolorum ducimus eaque earum enim eos esse eveniet facere hic inventore itaque magnam quae quia quidem quisquam saepe sint suscipit ut voluptatibus voluptatum. Alias doloremque hic quia similique suscipit?</p>
+                        </div>
+                    </div>
+
+                    <div class="w3-row w3-black w3-center">
+                        <div class="w3-display-container">
+                            <p id="caption"></p>
+                            <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
+                            <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+                        </div> <!-- arrow -->
+                        <div class="w3-col s3">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="images/f1.jpg" style="width:100%" onclick="currentDiv(1)" alt="Nature and sunrise">
+                        </div>
+                        <div class="w3-col s3">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="images/f2.jpg" style="width:100%" onclick="currentDiv(2)" alt="French Alps">
+                        </div>
+                        <div class="w3-col s3">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="images/f3.jpg" style="width:100%" onclick="currentDiv(3)" alt="Mountains and fjords">
+                        </div>
+                        <div class="w3-col s3">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="images/f4.jpg" style="width:100%" onclick="currentDiv(4)" alt="Mountains and fjords">
+                        </div>
+                    </div> <!-- End row -->
+                </div> <!-- End w3-content -->
+
+            </div> <!-- End modal content -->
+        </div> <!-- End modal -->
+
     </div>
 
-    <!--Video Section End -->
-    <div class="video_all d-sm-block d-none">
-        <div class="row col_height">
-            <div class="col-3 slider_video">
-                <video class="video_all_slider" id="video_slider4" src="asset/vdo/v1.mp4"></video>
-                   <div class="video_blur"></div>
-                <div class="carousel-caption video_all_caption m-0 p-0">
-                    <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
-                    <div class="play video_all_caption_div"><a onclick="togglePlay4()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
-              
+    <!--
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel_item_custom">
+                    <video class="video_slider" id="video_slider1" src="asset/vdo/v1.mp4"></video>
+                    <div class="carousel-caption caption m-0 p-0">
+                        <h1 class="caption_h1">Our Very Stupid Advice</h1>
+                        <div class="play caption_div"><a onclick="togglePlay1()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+                        <div class="caption_blur"></div>
+                    </div>
+                </div>
+
+                <div class="carousel-item carousel_item_custom">
+                    <video class="video_slider" id="video_slider2" src="asset/vdo/v1.mp4"></video>
+                    <div class="carousel-caption caption m-0 p-0">
+                        <h1 class="caption_h1">Our Very Stupid Advice</h1>
+                        <div class="play caption_div"><a onclick="togglePlay2()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+                      <div class="caption_blur"></div>
+
+                    </div>
+                </div>
+                <div class="carousel-item carousel_item_custom">
+                    <video class="video_slider" id="video_slider3" src="asset/vdo/v1.mp4"></video>
+                    <div class="carousel-caption caption m-0 p-0">
+                        <h1 class="caption_h1">Our Very Stupid Advice</h1>
+                        <div class="play caption_div"><a onclick="togglePlay3()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+                        <div class="caption_blur"></div>
+                    </div>
                 </div>
             </div>
-            <div class="col-3 slider_video">
-                <video class="video_all_slider" id="video_slider5" src="asset/vdo/v1.mp4"></video>
-                 <div class="video_blur"></div>
-                <div class="carousel-caption video_all_caption m-0 p-0">
-                    <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
-                    <div class="play video_all_caption_div"><a onclick="togglePlay5()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
-                   
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <svg id="left_arrow" viewBox="0 0 53 100" fill="currentColor" width="1em" height="1em"><path fill="currentColor" d="M5.16 99.14L2.15 96.13 48.6 50.11 2.15 4.3 5.16 1.29 54.62 50.11"></path></svg>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <svg id="right_arrow" viewBox="0 0 53 100" fill="currentColor" width="1em" height="1em"><path fill="currentColor" d="M5.16 99.14L2.15 96.13 48.6 50.11 2.15 4.3 5.16 1.29 54.62 50.11"></path></svg>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        &lt;!&ndash;Video Section End &ndash;&gt;
+        <div class="video_all d-sm-block d-none">
+            <div class="row col_height">
+                <div class="col-3 slider_video">
+                    <video class="video_all_slider" id="video_slider4" src="asset/vdo/v1.mp4"></video>
+                       <div class="video_blur"></div>
+                    <div class="carousel-caption video_all_caption m-0 p-0">
+                        <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
+                        <div class="play video_all_caption_div"><a onclick="togglePlay4()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+
+                    </div>
                 </div>
-            </div>
-            <div  class="col-3 slider_video" style="height: 350px">
-                <video class="video_all_slider" id="video_slider6" src="asset/vdo/v1.mp4"></video>
-                 <div class="video_blur"></div>
-                <div class="carousel-caption video_all_caption m-0 p-0">
-                    <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
-                    <div class="play video_all_caption_div"><a onclick="togglePlay6()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
-                   
+                <div class="col-3 slider_video">
+                    <video class="video_all_slider" id="video_slider5" src="asset/vdo/v1.mp4"></video>
+                     <div class="video_blur"></div>
+                    <div class="carousel-caption video_all_caption m-0 p-0">
+                        <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
+                        <div class="play video_all_caption_div"><a onclick="togglePlay5()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+
+                    </div>
                 </div>
-            </div>
-            <div class="col-3 slider_video" style="height: 350px">
-                <video class="video_all_slider" id="video_slider7" src="asset/vdo/v1.mp4"></video>
-                   <div class="video_blur"></div>
-                <div class="carousel-caption video_all_caption m-0 p-0">
-                    <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
-                    <div class="play video_all_caption_div"><a onclick="togglePlay7()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
-                 
+                <div  class="col-3 slider_video" style="height: 350px">
+                    <video class="video_all_slider" id="video_slider6" src="asset/vdo/v1.mp4"></video>
+                     <div class="video_blur"></div>
+                    <div class="carousel-caption video_all_caption m-0 p-0">
+                        <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
+                        <div class="play video_all_caption_div"><a onclick="togglePlay6()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+
+                    </div>
+                </div>
+                <div class="col-3 slider_video" style="height: 350px">
+                    <video class="video_all_slider" id="video_slider7" src="asset/vdo/v1.mp4"></video>
+                       <div class="video_blur"></div>
+                    <div class="carousel-caption video_all_caption m-0 p-0">
+                        <h1 class="video_all_caption_h1">Truth or Dare  / 00:31</h1>
+                        <div class="play video_all_caption_div"><a onclick="togglePlay7()"><i class="far fa-play-circle play_icon"></i><span class="play_button">Play Video</span></a></div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    -->
 
 
 
@@ -678,19 +834,38 @@
     </div>
     <!-- footer section End for mobile-->
 
+    </div>
 
 
 
 
 
-<!--    <a class="navbar-brand" href="#">
-        <svg preserveAspectRatio="xMidYMid meet" data-bbox="47.027 4.455 120.001 192.999" viewBox="47.027 4.455 120.001 192.999" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="img">
-            <g class="new-shape">
-                <path d="M165.898 69.808c-.911-1.544-3.197-4.134-8.273-4.139-5.931-.007-13.922-.005-21.018-.003h-2.462c2.31-6.329 5.09-13.723 7.799-20.928 3.566-9.485 7.253-19.293 9.876-26.688 1.202-3.388.852-6.684-.986-9.28-1.923-2.717-5.153-4.173-9.094-4.215-21.257-.225-33.231-.001-33.231-.001-5.477.001-8.848 2.294-10.609 7.216l-.578 1.615h-8.251c-5.382.002-8.694 2.253-10.423 7.085-4.321 12.078-9.065 25.31-13.848 38.654-5.808 16.203-11.676 32.57-16.918 47.236-1.362 3.808-1.089 7.354.768 9.984.993 1.408 3.366 3.769 8.094 3.771 4.876 0 9.534-.028 14.03-.057 3.897-.025 7.912-.05 12.088-.056-3.511 19.179-4.985 26.557-7.371 38.503-1.332 6.669-2.99 14.969-5.452 27.586-.462 2.368-.322 4.468.418 6.242.967 2.319 2.937 4.018 5.547 4.785a7.894 7.894 0 0 0 2.228.336c4.478-.001 7.03-4.316 8.348-6.546l.268-.452a7063.03 7063.03 0 0 0 3.375-5.667c1.095 1.855 2.891 3.217 5.163 3.884a7.876 7.876 0 0 0 2.204.319c1.624 0 3.649-.524 5.601-2.452 1.28-1.264 2.192-2.806 2.996-4.167l.267-.451c10.57-17.723 37.455-63.092 58.739-101.509 2.176-3.923 2.426-7.689.705-10.605zm-85.579 113.1c1.934-9.869 3.322-16.815 4.468-22.552 2.483-12.434 3.982-19.938 7.797-40.825a7.316 7.316 0 0 0-1.599-6.018c-1.578-1.888-3.981-2.972-6.592-2.972-4.758 0-9.293.029-13.678.057-4.362.028-8.868.057-13.58.057-.209 0-.435.003-.606-.005.034-.269.114-.64.282-1.109 5.241-14.664 11.108-31.029 16.915-47.228 4.784-13.346 9.528-26.58 13.85-38.66.137-.382.245-.6.311-.714.167-.038.524-.093 1.187-.093 0 0 21.043-.001 33.228.001.55 0 .895.078 1.086.142a2.637 2.637 0 0 1-.125.471c-2.594 7.31-6.264 17.074-9.814 26.517-3.531 9.393-7.182 19.107-9.785 26.434-.105.294-.2.592-.307.927l-2.153 6.621 15.893-.001c6.845-.002 14.536-.003 20.408.003a8.386 8.386 0 0 1-.214.413c-20.206 36.471-45.498 79.266-56.972 98.534z"></path>
-            </g>
-        </svg>
-        <span class="h1">ROBERT & ALAN</span>
-    </a>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -821,6 +996,81 @@
             }
         };
         
+    </script>
+
+
+
+
+
+
+
+    <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " w3-opacity-off";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+    <script>
+        var slide_index = 1;
+        displaySlides(slide_index);
+
+        function nextSlide(p) {
+            displaySlides(slide_index += p);
+        }
+
+        function currencurrentSlider(p) {
+            displaySlides(slide_index = p);
+        }
+
+        function displaySlides(p) {
+            var i;
+            var x = document.getElementsByClassName("mySliders");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (p > x.length) {slide_index = 1}
+            if (p < 1) {slide_index = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slide_index-1].style.display = "block";
+            dots[slide_index-1].className += " w3-opacity-off";
+            captionText.innerHTML = dots[slide_index-1].alt;
+        }
     </script>
 
 </body>

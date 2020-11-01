@@ -327,14 +327,13 @@
                     </div>
                 </div>
             </div>
-
-            <div class="w3-row w3-black w3-center d-sm-block d-none">
-                <span class="w3-display-left  aaa" onclick="nextSlide(-1)" style="top:59% !important; left:30px;transform: rotate(180deg);">
-                    <svg id="right_arrow" viewBox="0 0 53 100" fill="currentColor" width="18px" height="35px" style="background: transparent;"><path fill="currentColor" d="M5.16 99.14L2.15 96.13 48.6 50.11 2.15 4.3 5.16 1.29 54.62 50.11"></path></svg>
-                </span>
-                    <span class="w3-display-right  aaa" onclick="nextSlide(1)" style="top:59% !important;right:30px;">
-                    <svg id="right_arrow" viewBox="0 0 53 100" fill="currentColor" width="18px" height="35px"><path fill="currentColor" d="M5.16 99.14L2.15 96.13 48.6 50.11 2.15 4.3 5.16 1.29 54.62 50.11"></path></svg>
-                </span>
+            <span class="w3-display-left aaa" id="aaa" onclick="nextSlide(-1)">
+                <svg id="right_arrow" viewBox="0 0 53 100" fill="currentColor" width="18px" height="35px" style="background: transparent;"><path fill="currentColor" d="M5.16 99.14L2.15 96.13 48.6 50.11 2.15 4.3 5.16 1.29 54.62 50.11"></path></svg>
+            </span>
+                <span class="w3-display-right aaa" id="bbb" onclick="nextSlide(1)">
+                <svg id="right_arrow" viewBox="0 0 53 100" fill="currentColor" width="18px" height="35px"><path fill="currentColor" d="M5.16 99.14L2.15 96.13 48.6 50.11 2.15 4.3 5.16 1.29 54.62 50.11"></path></svg>
+            </span>
+            <div class="w3-row w3-black w3-center d-sm-none d-none">
 <!--                <span class="w3-display-left w3-btn aa" onclick="nextSlide(-1)">❮</span>-->
 <!--                <span class="w3-display-right w3-btn bb" onclick="nextSlide(1)">❯</span>-->
                 <div class="w3-col s3 m-0 p-0" onclick="currencurrentSlider(1)">
@@ -369,15 +368,15 @@
         </div>
         <!--  end  front Section-->
 
-        <div id="myModal" class="w3-modal w3-black">
+        <div id="myModal" class="w3-modal w3-black" style="background-color: black;">
             <button type="button" class="close close_custom" data-dismiss="modal" aria-label="Close" onclick="closeModal()">
                 <span aria-hidden="true">&times;</span>
             </button>
             <div class="w3-modal-content" style="width: 95%">
                 <div class="w3-content" style="max-width:100%">
                     <div class="mySlides" id="01">
-                        <div class="video w3-col s12 m8" style="max-height: 350px">
-                            <video class="" controls autoplay style="width:100%;max-height: 350px;cursor:pointer">
+                        <div class="video w3-col s12 m8"  style="max-height: 350px;text-align: right;">
+                            <video class="" id="video_slider1" controls autoplay style="outline: 0;width:80%;max-height: 350px;cursor:pointer">
                                 <source src="asset/vdo/v1.mp4" type="video/mp4">
                                 Your browser does not support HTML video.
                             </video>
@@ -387,8 +386,8 @@
                         </div>
                     </div>
                     <div class="mySlides" id="02">
-                        <div class="video w3-col s12 m8" style="max-height: 350px">
-                            <video class="" controls style="width:100%;max-height: 350px;cursor:pointer">
+                        <div class="video w3-col s12 m8"  style="max-height: 350px;text-align: right;">
+                            <video class="" id="video_slider2" controls style="outline: 0;width:80%;max-height: 350px;cursor:pointer">
                                 <source src="asset/vdo/v2.mp4" type="video/mp4">
                                 Your browser does not support HTML video.
                             </video>
@@ -398,8 +397,8 @@
                         </div>
                     </div>
                     <div class="mySlides" id="03">
-                        <div class="video w3-col s12 m8" style="max-height: 350px">
-                            <video class="" controls style="width:100%;max-height: 350px;cursor:pointer">
+                        <div class="video w3-col s12 m8"  style="max-height: 350px;text-align: right;">
+                            <video class="" id="video_slider3" controls style="outline: 0;width:80%;max-height: 350px;cursor:pointer">
                                 <source src="asset/vdo/v3.mp4" type="video/mp4">
                                 Your browser does not support HTML video.
                             </video>
@@ -409,8 +408,8 @@
                         </div>
                     </div>
                     <div class="mySlides" id="04">
-                        <div class="video w3-col s12 m8" style="max-height: 350px">
-                            <video class="" controls style="width:100%;max-height: 350px;cursor:pointer">
+                        <div class="video w3-col s12 m8"  style="max-height: 350px;text-align: right;">
+                            <video class="" id="video_slider4" controls style="outline: 0;width:80%;max-height: 350px;cursor:pointer">
                                 <source src="asset/vdo/v1.mp4" type="video/mp4">
                                 Your browser does not support HTML video.
                             </video>
@@ -423,8 +422,8 @@
                     <div class="w3-row w3-black w3-center">
                         <div class="w3-display-container">
                             <p id="caption"></p>
-                            <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
-                            <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+                            <span class="w3-display-left w3-btn" onclick="plusDivs(-1);togglePlay()">❮</span>
+                            <span class="w3-display-right w3-btn" onclick="plusDivs(1);togglePlay()">❯</span>
                         </div> <!-- arrow -->
                         <div class="w3-col s12 m3 modal_sub_vdo_desktop">
                             <img class="demo w3-opacity w3-hover-opacity-off" src="images/f1.jpg" style="width:100%" onclick="currentDiv(1)" alt="Nature and sunrise">
@@ -943,72 +942,69 @@
         })
     </script>
     <script>
-        var vid1 = document.getElementById("video_slider1");
-        var vid2 = document.getElementById("video_slider2");
-        var vid3 = document.getElementById("video_slider3");
-        var vid4 = document.getElementById("video_slider4");
-        var vid5 = document.getElementById("video_slider5");
-        var vid6 = document.getElementById("video_slider6");
-        var vid7 = document.getElementById("video_slider7");
 
-        function togglePlay1() {
-            if (vid1.paused) {
-                vid1.play();
-            }
-            else {
-                vid1.pause();
-            }
+
+        function togglePlay() {
+            var vid1 = document.getElementById("video_slider1");
+            var vid2 = document.getElementById("video_slider2");
+            var vid3 = document.getElementById("video_slider3");
+            var vid4 = document.getElementById("video_slider4");
+            vid1.pause();
+            vid2.pause();
+            vid3.pause();
+            vid4.pause();
+            
         };
-        function togglePlay2() {
-            if (vid2.paused) {
-                vid2.play();
-            }
-            else {
-                vid23.pause();
-            }
-        };
-        function togglePlay3() {
-            if (vid3.paused) {
-                vid3.play();
-            }
-            else {
-                vid3.pause();
-            }
-        };
-        function togglePlay4() {
-            if (vid4.paused) {
-                vid4.play();
-            }
-            else {
-                vid4.pause();
-            }
-        };
-        function togglePlay5() {
-            if (vid5.paused) {
-                vid5.play();
-            }
-            else {
-                vid5.pause();
-            }
-        };
+        // function togglePlay2() {
+        //     if (vid2.paused) {
+        //         vid2.play();
+        //     }
+        //     else {
+        //         vid2.pause();
+        //     }
+        // };
+        // function togglePlay3() {
+        //     if (vid3.paused) {
+        //         vid3.play();
+        //     }
+        //     else {
+        //         vid3.pause();
+        //     }
+        // };
+        // function togglePlay4() {
+        //     if (vid4.paused) {
+        //         vid4.play();
+        //     }
+        //     else {
+        //         vid4.pause();
+        //     }
+        // };
+        // function togglePlay5() {
+        //     if (vid5.paused) {
+        //         vid5.play();
+        //     }
+        //     else {
+        //         vid5.pause();
+        //     }
+        // };
         
-        function togglePlay6() {
-            if (vid6.paused) {
-                vid6.play();
-            }
-            else {
-                vid6.pause();
-            }
-        };
+        // function togglePlay6() {
+        //     if (vid6.paused) {
+        //         vid6.play();
+        //     }
+        //     else {
+        //         vid6.pause();
+        //     }
+        // };
         
-        function togglePlay7() {
-            if (vid7.paused) {
-                vid7.play();
-            }
-            else {
-                vid7.pause();
-            }
-        };
+        // function togglePlay7() {
+        //     if (vid7.paused) {
+        //         vid7.play();
+        //     }
+        //     else {
+        //         vid7.pause();
+        //     }
+        // };
         
     </script>
 

@@ -935,15 +935,27 @@ nav a.active{
 .carousel_item_custom {
     margin-bottom: -5px!important;
 }
-.aaa{
+#aaa{
+    top:59% !important;
+    left:30px;
+    transform: rotate(180deg);
     background: transparent !important;
 }
-.aaa:hover{
+#aaa:hover{
     background: none;
     cursor: pointer;
     box-shadow: transparent;
 }
-
+#bbb{
+    top:59% !important;
+    right:30px;
+    background: transparent !important;
+}
+#bbb:hover{
+    background: none;
+    cursor: pointer;
+    box-shadow: transparent;
+}
 .a {
     background: none!important;
     top: 34%!important;
@@ -1118,6 +1130,27 @@ video {
 
     .modal_sub_vdo_desktop {
         display: none;
+    }
+    #aaa{
+        top:73% !important;
+        left:15px;
+        transform: rotate(180deg);
+        background: transparent !important;
+    }
+    #aaa:hover{
+        background: none;
+        cursor: pointer;
+        box-shadow: transparent;
+    }
+    #bbb{
+        top:73% !important;
+        right:15px;
+        background: transparent !important;
+    }
+    #bbb:hover{
+        background: none;
+        cursor: pointer;
+        box-shadow: transparent;
     }
 
 

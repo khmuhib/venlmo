@@ -1125,7 +1125,7 @@ video {
     }
 
     .modal_video_text {
-        display: none;
+/*        display: none;*/
     }
 
     .modal_sub_vdo_desktop {
@@ -1152,6 +1152,9 @@ video {
         cursor: pointer;
         box-shadow: transparent;
     }
+
+
+
 
 
 }
@@ -1196,3 +1199,5 @@ video {
     margin-top: -51px!important;
     margin-right: 2px!important;
 }
+
+
